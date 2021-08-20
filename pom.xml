@@ -51,7 +51,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<filename>>exemple-git</filename>
+		<finalName>>exemple-git</finalName>
 	</build>
 
 </project>
