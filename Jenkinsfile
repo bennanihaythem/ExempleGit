@@ -30,13 +30,13 @@ pipeline
         stage("Build docker")
         {
             steps{
-                sh "sudo docker build -f Dockerfile -t exemple-git ."
+                sh "docker build -f Dockerfile -t exemple-git ."
             }
         }
         stage("run docker")
         {
             steps{
-                sh "sudo docker run -p 8088:8088 -d exemple-git"
+                sh "docker run -p 8088:8088 -d exemple-git"
             }
             post{
                 success{
