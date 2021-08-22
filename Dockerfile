@@ -1,5 +1,5 @@
 FROM openjdk:8
 EXPOSE 8088
-ADD target/*.jar exemple-git.jar
+ADD target/*.war exemple-git.war
 USER nobody
-ENTRYPOINT ["java","-jar","./exemple-git.jar"]
+ENTRYPOINT ["java","-war","./exemple-git.war"]
